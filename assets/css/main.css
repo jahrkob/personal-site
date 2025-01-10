@@ -1,0 +1,237 @@
+html,
+body,
+ul,
+div,
+img,
+h1,
+a,
+li {
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  font-display: optional;
+  color: #636363;
+  height: 100%;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+h3 {
+  font-family: 'Lato';
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  color: #a9acb5;
+  margin-bottom: 0;
+}
+
+::selection {
+  background: #dae8f8;
+}
+::-moz-selection {
+  background: #dae8f8;
+}
+
+.fadeIn {
+  animation: fadeIn ease 1s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  margin: auto;
+  max-width: 615px;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.desc {
+  display: block;
+  width: 100%;
+}
+
+.bold {
+  font-family: 'Source Serif Pro', serif;
+  font-weight: bold;
+}
+
+#info {
+  margin-right: 25px;
+}
+
+.details {
+  color: #3f3f3f;
+  font-family: 'Source Serif Pro', serif;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+#header {
+  font-family: 'Inter', sans-serif;
+  color: black;
+  margin: 0 0 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#header h1 {
+  font-size: 24px;
+}
+
+#header h1,
+p {
+  font-weight: 400;
+}
+
+#links {
+  display: flex;
+}
+
+#about {
+  text-align: right;
+}
+
+#icons {
+  font-size: 18px;
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  grid-auto-columns: max-content;
+  grid-gap: 0 15px;
+  margin: 5px 0 0 0;
+}
+
+#icons p {
+  font-size: 12px;
+  display: inline;
+  width: max-content;
+  margin: 0;
+}
+
+#icons a {
+  width: max-content;
+}
+
+.icon {
+  color: #636363;
+}
+
+#name-box {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+}
+
+.company {
+  text-decoration: underline;
+  color: #0e1111;
+}
+
+.intro {
+  color: #3f3f3f;
+  font-family: 'Source Serif Pro', serif;
+  letter-spacing: 0.01rem;
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
+#main {
+  font-size: 18px;
+}
+
+.fa-github {
+  color: #333;
+}
+
+.fa-x-twitter {
+  color: #000000;
+}
+
+.fa-spotify {
+  color: #1DB954;
+}
+
+.fa-steam {
+  color: #2a475e;
+}
+
+.fa-letterboxd {
+  color: #FF8000;
+}
+
+.fa-xbox {
+  color: #107C10;
+}
+
+.fa-youtube {
+  color: #FF0000;
+}
+
+.fa-twitch {
+  color: #6441a5;
+}
+
+@media screen and (max-width: 650px) {
+  #wrapper {
+    min-height: auto;
+    height: auto;
+    padding: 20px;
+  }
+
+  .icon {
+    margin-right: 9px;
+  }
+
+  .desc {
+    width: calc(100% - 30px);
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #icons {
+    font-size: 23px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .desc {
+    width: calc(100% - 40px);
+  }
+
+  .intro {
+    font-size: 10px;
+  }
+
+  #header {
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  #icons {
+    text-align: right;
+  }
+
+  .icon {
+    margin-right: 10px;
+  }
+}
